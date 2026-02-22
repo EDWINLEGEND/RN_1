@@ -9,7 +9,7 @@
     "scheme": "rn1",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "supportsTabletMode": true
     },
     "android": {
       "adaptiveIcon": {
