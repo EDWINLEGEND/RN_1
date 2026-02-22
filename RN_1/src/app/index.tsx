@@ -1,10 +1,20 @@
-import { Text, View, StyleSheet } from "react-native";
-
+import { Text, View, StyleSheet, TextInput, Button, ActivityIndicator } from "react-native";
+import { Image } from "expo-image";
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Text>Edit src/app/index.tsx to edit this screen.</Text>
-    </View>
+      <Text style={styles.helloWorldTitle}>Hello World </Text>
+      <Image
+        source={{
+          uri: "https://media1.tenor.com/m/fQakS_QTUEwAAAAC/zayneeeeeeelads.png"
+        }}
+        style={styles.image}
+      />
+      <TextInput placeholder="Email" />
+      <TextInput placeholder="Password" />
+      <Button title="Login" />
+      <ActivityIndicator />
+    </View >
   );
 }
 
